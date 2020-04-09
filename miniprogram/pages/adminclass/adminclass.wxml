@@ -1,0 +1,16 @@
+<!--miniprogram/pages/adminclass/adminclass.wxml-->
+<van-button plain type="info" icon="add-o" bindtap="creat" custom-style="position: fixed; bottom:10%;;right:5%;height: 100rpx;width:100rpx;border-radius:100%;"></van-button>
+<van-dialog id="van-dialog" />
+<!-- 对话框 -->
+<view wx:if="{{ adminclass }}">
+  <van-swipe-cell  wx:for="{{ adminclass }}" bind:click="tap" id="{{ item._id }}" right-width=" {{ 65 }} " async-close bind:close="onClose">
+    <van-cell-group>
+      <van-card desc="{{ item.number}} " title="{{ item.classname }} " thumb="cloud://txzs-zzsg.7478-txzs-zzsg-1300611051/dog1.jpg" />
+    </van-cell-group>
+    <view slot="right" style="magin-top:40%">
+      删除
+    </view>
+  </van-swipe-cell>
+
+  <view wx:if="{{adminclass.length == 0 }}" > 未创建过哦，请点击右下角图标申请</view>
+</view>

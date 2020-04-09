@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/firstPage/first",
+    "pages/firstPage/user",
+    "pages/myInfo/my",
+    "pages/register/register",
+    "pages/register/authSetting",
+    "pages/myInfo/changeMy",
+    "pages/myOrganize/myOrganize",
+    "pages/ temporary/ temporary",
+    "pages/adminclass/adminclass",
+    "pages/adminclass/creatclass",
+    "pages/adminclass/classdetail",
+    "pages/taskdetail/detail",
+    "pages/card/card"
+  ],
+  "window": {
+    "backgroundColor": "#f0f0f0",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#82CAF0",
+    "navigationBarTitleText": "Do it",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/firstPage/first",
+        "text": "打卡",
+        "iconPath": "images/task2.png",
+        "selectedIconPath": "images/task1.png"
+      },
+      {
+        "pagePath": "pages/firstPage/user",
+        "text": "我的",
+        "iconPath": "images/my2.png",
+        "selectedIconPath": "images/my1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "/@vant/weapp/button",
+    "van-dialog": "/@vant/weapp/dialog/index",
+    "van-tab": "/@vant/weapp/tab/index",
+    "van-tabs": "/@vant/weapp/tabs/index",
+    "van-tabbar": "/@vant/weapp/tabbar/index",
+    "van-tabbar-item": "/@vant/weapp/tabbar-item/index",
+    "van-row": "/@vant/weapp/row/index",
+    "van-col": "/@vant/weapp/col/index",
+    "van-field": "/@vant/weapp/field/index",
+    "van-toast": "/@vant/weapp/toast/index",
+    "van-cell": "/@vant/weapp/cell/index",
+    "van-cell-group": "/@vant/weapp/cell-group/index",
+    "van-swipe-cell": "/@vant/weapp/swipe-cell/index",
+    "van-card": "/@vant/weapp/card/index",
+    "van-notice-bar": "/@vant/weapp/notice-bar/index",
+    "van-uploader": "/@vant/weapp/uploader/index",
+    "van-image": "/@vant/weapp/image/index"
+  }
+}

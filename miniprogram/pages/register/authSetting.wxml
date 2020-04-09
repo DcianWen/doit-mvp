@@ -1,0 +1,3 @@
+<van-dialog id="van-dialog" />
+
+<van-button type="info" class="btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</van-button>

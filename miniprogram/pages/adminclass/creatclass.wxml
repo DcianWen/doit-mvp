@@ -1,0 +1,12 @@
+<van-toast id="van-toast" />
+<van-cell-group>
+  <van-field value="{{ username }}" bind:change="onChange" id="1" required label="名称" placeholder="请输入一个代表这个班级的名称" />
+  <!-- <van-field value="{{ number }}" bind:change="onChange" id="2" required label="编号" placeholder="请输入6位数编号" /> -->
+  <van-field value="{{ number }}" bind:change="onChange" type="number" label="编号" id="2" placeholder="请输入6位数字编号" error-message="{{ tips }}" border="{{ false }}" />
+</van-cell-group>
+
+<van-button wx:if="{{ but }}" icon="star-o" plain type="info" custom-style="margin-top:50rpx;margin-left:40%" bindtap="creat">创建</van-button>
+
+<view class="weui-footer weui-footer_fixed-bottom">
+  <view class="weui-footer__text">Copyright © 2020DaXian</view>
+</view>

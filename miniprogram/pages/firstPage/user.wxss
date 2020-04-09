@@ -1,0 +1,36 @@
+.van-button--info {
+  width: 100%;
+}
+.btn1{
+  float: left;
+}
+.userNickname {
+  color: #fff;
+  font-size: 35rpx;
+}
+
+.background {
+  align-items: center;
+  width: 100%;
+  background-color: #82CAF0;
+  display: flex;
+  flex-direction: column;
+  height: 350rpx;
+}
+
+.userinfo1 {
+  overflow: hidden;
+  display: block;
+  align-items: center;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  margin-top: 50rpx;
+  border-radius: 60%;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.contact{
+  position: fixed;
+  bottom: 25%;
+}

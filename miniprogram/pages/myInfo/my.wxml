@@ -1,0 +1,7 @@
+<!-- <view wx:for="{{ userInfo }}" style="margin-top:10rpx;" bindtap="clickButton"> -->
+  <!-- <van-button plain hairline type="info" icon="{{ item.icon }}" class="btn" custom-style="float:left;"	>{{ item.name }}</van-button> -->
+  <van-cell title="姓名"  data-id="username"data-what="{{ userInfo.username }}" bindtap="changeWhat" value="{{ userInfo.username }}" is-link />
+  <van-cell title="学校"  data-id="school" data-what="{{ userInfo.school }}" bindtap="changeWhat" value="{{ userInfo.school }}" is-link />
+  <van-cell title="班级"  data-id="uclass" data-what="{{ userInfo.uclass }}" bindtap="changeWhat" value="{{ userInfo.uclass }}" is-link />
+  <van-cell title="学号"  data-id="number" data-what="{{ userInfo.number }}" bindtap="changeWhat" value="{{ userInfo.number }}" is-link />
+<!-- </view> -->

@@ -1,0 +1,7 @@
+<van-dialog id="van-dialog" />
+
+<van-cell-group>
+  <van-cell wx:for="{{student_info}}" wx:key="{{student_info}}" bindtap="tap" data-id="{{ item._id }}" title="{{item.student.username}}" value="{{ item.status }}" label="{{item.time}}" border="{{ false }}" />
+</van-cell-group>
+
+<van-loading wx:if="{{ load }}" style="margin-left:45%" color="#1989fa" />

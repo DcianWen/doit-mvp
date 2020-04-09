@@ -1,0 +1,6 @@
+/* miniprogram/pages/register/register.wxss */
+.btn .van-button {
+  display: flex;
+  margin: 30%;
+}
+

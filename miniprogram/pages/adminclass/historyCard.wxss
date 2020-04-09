@@ -1,0 +1,27 @@
+/* miniprogram/pages/historyCard/historyCard.wxss */
+
+.classmate{
+  margin-left: 50rpx;
+}
+
+.imgback{
+  background: #ffffff;
+}
+
+.pictureList {
+  width: 100%;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+}
+
+.picture {
+  width: 100%;
+
+}
+
+.img {
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+}

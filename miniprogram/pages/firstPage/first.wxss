@@ -1,0 +1,15 @@
+/* pages/firstPage/first.wxss */
+.btn{
+  position: fixed;
+  top: 40%;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 100%;
+  color: white;
+  margin-right: 50%;
+  background: linear-gradient(to right, #4bb0ff, #82CAF0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30%;
+}

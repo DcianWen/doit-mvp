@@ -1,0 +1,15 @@
+<!-- <van-toast id="van-toast" /> -->
+<van-toast id="custom-selector" />
+
+
+<van-tabs wx:if="{{ toast }}" active="{{ tab }}" bind:change="onChangeTab" bind:click="onClick" swipeable>
+  <van-tab title="待完成" name="待完成">
+  111
+    <view wx:for="{{user}}">内容 1</view>
+  </van-tab>
+  <van-tab title="已完成" name='已完成'>内容 2</van-tab>
+</van-tabs>
+<!-- <van-tabbar active="{{ tabbar }}" bind:change="onChangeTabbar">
+  <van-tabbar-item icon="home-o">任务</van-tabbar-item>
+  <van-tabbar-item icon="friends-o">我的</van-tabbar-item>
+</van-tabbar> -->

@@ -1,0 +1,16 @@
+<!--miniprogram/pages/myInfo/changeMy.wxml-->
+
+<van-cell-group>
+  <van-field
+    center
+    value="{{ what }}"
+    clearable
+    label="{{changewhat}}"
+   bind:change="change"
+    border="{{ false }}"
+    use-button-slot
+  >
+    <van-button slot="button" size="small" type="primary" bindtap="changeWhat">修改</van-button>
+  </van-field>
+</van-cell-group>
+ <!-- placeholder="{{what}}" -->

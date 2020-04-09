@@ -1,0 +1,22 @@
+<van-toast id="van-toast" />
+<van-dialog id="van-dialog" />
+
+
+<view class='background' style="  margin-bottom:30rpx;">
+  <view class="userinfo1" mode="widthFix">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view>
+    <open-data class='userNickname' type="userNickName"></open-data>
+  </view>
+</view>
+<view wx:for="{{ btn }}" style="margin-top:10rpx;" bindtap="clickButton">
+  <!-- <van-button plain hairline type="info" icon="{{ item.icon }}" class="btn" custom-style="float:left;"	>{{ item.name }}</van-button> -->
+  <van-cell title="{{ item.name }}" icon="{{ item.icon }}" data-id="{{ item.id }}" is-link />
+</view>
+
+<!-- <button open-type="contact" style="width:100%"><van-cell title="客服" icon="service" is-link /></button> -->
+<van-button plain type="info" icon="service" open-type="contact" custom-style="position: fixed; bottom:10%;;right:5%;height: 100rpx;width:100rpx;border-radius:100%;"	></van-button>
+<view class="weui-footer weui-footer_fixed-bottom">
+  <view class="weui-footer__text">Copyright © 2020DaXian</view>
+</view>

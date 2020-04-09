@@ -1,0 +1,23 @@
+<van-dialog id="van-dialog" />
+
+<van-cell-group>
+  <van-cell title="提交时间" value="{{ info.time }}" />
+  <van-cell title="打卡编号" value="{{ info.number }}" />
+  <van-cell title="姓名" value="{{ info.student.username }}" />
+  <van-cell title="班级" value="{{ info.student.uclass }}" />
+  <van-cell title="学号" value="{{ info.student.number }}" />
+  <van-cell wx:if="{{ info.talk }}" title="说点什么" value="{{ info.talk }}" />
+  <van-cell wx:if="{{ info.evaluate }}" title="评价" value="{{ info.evaluate }}" />
+  <van-cell wx:if="{{ info.grade }}" title="得分" value="{{ info.grade }}" />
+
+</van-cell-group>
+
+<view class="imgback">
+  <view class="pictureList">
+    <block class="picture" wx:for="{{ info.images_fileID }}">
+      <image class="img" src="{{item}}" bindtap="previewImage" mode="aspectFill" data-index='{{index}}'></image>
+    </block>
+  </view>
+</view>
+
+<van-button icon="star-o" plain type="info" custom-style="margin-top:50rpx;margin-left:40%" bindtap="deleteIt">删除</van-button>

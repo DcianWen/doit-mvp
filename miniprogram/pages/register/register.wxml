@@ -1,0 +1,11 @@
+<!--miniprogram/pages/register/register.wxml-->
+<van-dialog id="van-dialog" />
+<form bindsubmit='uploadUserInfo'>
+  <van-cell-group>
+    <van-field value="{{ username }}" bind:change="onChange" id="1" required label="姓名" placeholder="请输入名字" />
+    <van-field value="{{ school }}" bind:change="onChange" id="2" required label="学校" placeholder="请输入用户学校" />
+    <van-field value="{{ uclass }}" bind:change="onChange" id="3" required label="班级" placeholder="请输入班级" />
+    <van-field value="{{ number }}" bind:change="onChange" id="4" required label="学号" placeholder="请输入用户学号" />
+  </van-cell-group>
+    <van-button color=" linear-gradient(to right, #4bb0ff, #6149f6) " form-type="uploadUserInfo" bindtap="uploadUserInfo" class="btn ">注册信息</van-button>
+</form>

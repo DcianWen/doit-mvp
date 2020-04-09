@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "详情",
+  "usingComponents": {
+    "van-image": "/@vant/weapp/image/index",
+    "van-divider": "@vant/weapp/divider/index"
+  }
+}

@@ -1,0 +1,4 @@
+/* miniprogram/pages/myInfo/my.wxss */
+.van-button--info {
+  width: 100%;
+}

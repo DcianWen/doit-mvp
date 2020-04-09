@@ -1,0 +1,24 @@
+<!--miniprogram/pages/historyCard/historyCard.wxml-->
+<van-cell-group>
+  <van-cell title="提交时间" value="{{ info.time }}" />
+  <van-cell title="姓名" value="{{ info.student.username }}" />
+  <van-cell title="班级" value="{{ info.student.uclass }}" />
+  <van-cell title="学号" value="{{ info.student.number }}" />
+  <van-cell wx:if="{{ info.talk }}" title="说点什么" value="{{ info.talk }}" />
+</van-cell-group>
+
+<view class="imgback">
+  <view class="pictureList">
+    <block class="picture" wx:for="{{ info.images_fileID }}">
+      <image class="img" src="{{item}}" bindtap="previewImage" mode="aspectFill" data-index='{{index}}'></image>
+    </block>
+  </view>
+</view>
+
+<van-cell-group>
+  <van-field bind:change="onChange" id="1" label="评价" placeholder="{{ info.evaluate.length>0?info.evaluate:'评价一下' }}" />
+  <van-field bind:change="onChange" type="number" label="分数" id="2" placeholder="{{ info.grade.length>0?info.grade:'打个分吗,标准自己顶哦' }}" error-message="{{ tips }}" border="{{ false }}" />
+</van-cell-group>
+
+
+<van-button icon="star-o" plain type="info" custom-style="margin-top:50rpx;margin-left:40%" bindtap="creat">确认</van-button>
